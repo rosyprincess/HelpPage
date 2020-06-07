@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedule Data Transfer - User Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" style="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+      <header>
+        <h1>SCHEDULE DATA TRANSFER</h1>
+      </header>
+    
+    
+
+    <div class="comtent">
+        <img src="" alt="imag">
+        <div class="span1">
+            <h4>WHAT IS THE SCHEDULE DATA TRANSFER (SDT)?</h4>
+            <button type="button" class="btn btn-success">Submit</button>
+            <p>
+                Schedule Data Transfer (SDT) is a web app that allows you to automatically download a 
+                Google Sheet from Google Drive to a local server in Seagate (server has to support SFTP/FTPS) 
+                according to your specified schedule. 
+            </p>
+    
+            <p>
+                Any Seagator with Seagate’s Gmail and Google Drive account can use this app. For first time users, 
+                this app will need the approval of the user to access his/her Google Drive files for it to download. 
+            </p>
+    
+            <h5>HOW DO I ACCESS THE APPLICATION? </h5>
+    
+            <p>
+                You can access the app via the ‘freckles’ menu (the 3x3 boxes) from your Seagate Gmail/Drive/Calendar 
+                (You’ll have to scroll/click on the ‘More’ link if you can’t find it). Look for the Scheduled Data Transfer icon. 
+            </p>
+    
+            <p>
+                Note: <br>
+    
+                First time users to the app will be forwarded to a Google Approval page, where you’ll be requested to 
+                provide the app access to your Google Drive file for it to pick and download to your target location. 
+                Click on the Accept button to proceed. 
+            </p>
+    
+            <p class="caption"> Screenshot 1: From the ‘Freckes’ menu, click on the More button below </p>
+    
+            <img src="" alt="imag">
+    
+            <p class="caption"> Screenshot 2: You’ll be able to see the Scheduled Data Transfer icon (you may need to 
+                scroll down a bit) 
+            </p>
+    
+            <img src="" alt="imag">
+    
+            <p class="caption"> Screenshot 3: Google Approval page requesting access to your Google Drive. Click on 
+                Accept to use this app.  
+            </p>
+           
+            <img src="" alt="imag">
+        </div>
+
+        <div class="span2">
+            <h5>HOW DO I SCHEDULE THE GOOGLE SHEET DOWNLOAD? </h5> 
+
+            <p> <b>Step 1</b>  
+                : Click on the New Download button. The Schedule Download Job form will appear. 
+            </p>       
+            
+            <img src="" alt="imag">
+    
+            <img src="" alt="imag">
+    
+            <p> <b>Step 2</b>  
+                : Fill in the following form details;   
+            </p>  
+    
+            <p class="step2">Job Description </p>  
+    
+            <img src="" alt="imag">  
+    
+            <p class="steps">Fill in the schedule name with an easy to identify name that let’s you differentiate and know what the scheduled 
+                job is for. You can add more descriptions for this job in the Description text field. 
+            </p>
+                
+            <p class="step2">Spreadsheet to Download </p>   
+    
+            <img src="" alt="imag">
+    
+            <p class="steps">  Click on the Choose File… button to select your Google Sheet from your Drive. 
+                A dialog box containing your Google Sheets will appear when clicked. 
+            </p>  
+    
+            <img src="" alt="imag">
+    
+            <p class="steps">  
+                You can search for your Google Sheets from the search box. It will search again all Sheets you own/those 
+                shared with you. Double-click on the file to select it and the dialog box will close. 
+            </p> 
+    
+            <img src="" alt="imag">
+    
+            <p class="steps">  
+                You’ll notice that the URL of the Google Sheet you selected has been populated on the read-only text field. 
+                Notice the new [View] link to the right of the text field. You can click on this link to open and verify 
+                the Sheet you have selected on a new tab/window. 
+            </p> 
+    
+            <p class="steps">  
+                Below the text field, there’s a dropdown list titled [Download As:]. Here, you’ll be able to select what 
+                file you’d like to download the Google Sheet as. The options available are to download as CSV (Comma 
+                Separated Value), MS Excel (.xlsx), and Open Office Spreadsheet (.ods). 
+            </p> 
+    
+            <p class="steps">  
+                Also give special attention to the [(Optional) Target file name:] text field below; 
+            </p> 
+    
+            <img src="" alt="imag">
+    
+            <p class="steps">  
+                This text field allows you to modify the downloaded file name to a name of your choosing. If nothing has 
+                been selected, then the system will download it using the Google Sheet’s file name. 
+            </p> 
+    
+            <p class="step2">Target Download Server Information  </p>   
+    
+            <img src="" alt="imag">
+    
+            <p class="steps">
+                This is where you define where you want the system to drop your Google Sheet file (within Seagate of 
+                course). <br>
+                The server where you want to download the file to has to support SFTP or FTPS (for Tableau).  <br>
+                You’ll need the server hostname, which folder on the server you want to download it too, and the username 
+                and password account owned by you to that server.  <br>
+                Fill in all the details, and select which [Server Protocol] you’re using to connect to that server. 
+            </p> 
+    
+            <p class="steps">
+                You can click on the Test Connection button to find out if the server details you entered is correct and 
+                if our app can connect to that server. 
+            </p>   
+    
+            <p class="step2">Download Schedule </p> 
+    
+            <p class="steps">
+                To schedule the automatic download according to your time, select among the timezone available in the dropdown 
+                (based on Seagate’s site for convenience). 
+            </p> 
+    
+            <p class="steps">
+                To specify a specific interval for your schedule, select the Scheduling Type dropdown, and the appropriate
+                 text fields/checkboxes/dropdowns will appear depending on your preferred scheduling type. 
+            </p> 
+            
+            <img src="" alt="imag">
+    
+            <p> <b>Step 3</b>  : Click on the Schedule New Job button. That’s it!   </p> 
+            
+            <h5>HOW DO IS SORT JOBS ON THE JOB LIST TABLE ? </h5>
+    
+            <p>
+                In the main Download Jobs list, you’ll see a table with several of your jobs. By default all the jobs are 
+                sorted based on the latest created jobs on top. Each of the table column can be sorted. Click on the 
+                column header that you would like to do the sorting, either in ascending 
+                <img src="" alt="Ascending.png">  
+                or descending 
+                <img src="" alt="descending.png"> 
+                order. 
+            </p>
+    
+            <img src="" alt="imag">
+        </div>
+        
+        <div class="span2"> 
+            
+            <h5>
+                HOW TO FILTER/SEARCH THE JOB FROM JOB LIST TABLE ? 
+            </h5>
+    
+            <p> <b>Step 1</b>  
+                : Navigate to the Schedule Download Spreadsheet > List screen and the Job List table will display the jobs 
+                that created by you and the list is sorted by [Created On] column in descending sequence by default.  
+            </p>  
+    
+            <p> <b>Step 2</b>  
+                : The system allow you  to do the filtering by each and every columns. 
+                You can filter/search the job by entering the keyword in the column/columns that you wish to filter/search on.   
+            </p>
+    
+            <p>
+                The system allow you  to do the filtering by each and every columns. You can filter/search the job by 
+                entering the keyword in the column/columns that you wish to filter/search on. 
+            </p>
+    
+            <img src="" alt="imag">
+        </div>
+        
+        <div class="span3">
+            <h5>
+                HOW TO PAUSE AND RESUME A JOB ? 
+            </h5>
+    
+            <p> <b>Step 1</b>  
+                : Search or Filter the job that you would like to pause/resume by following the 'How to search and view 
+                the jobs created' steps.   
+            </p>  
+    
+            <p> <b>Step 2</b>  
+                : You will be leading to this page once you click the selected Job name. Click on the 'Pause Job' button 
+                in order to pause the job.  
+            </p>
+    
+            <p> <b>Step 3</b>  
+                : Click on the Resume Job button in order to resume the job.   
+            </p>  
+    
+            <img src="" alt="imag">
+    
+            <h5>
+                HOW TO EDIT THE JOB DETAILS ? 
+            </h5>
+    
+            <p> <b>Step 1</b>  
+                : Search or Filter the job that you would like to pause/resume by following the 'How to search and view 
+                the jobs created' steps.   
+            </p> 
+            
+            <p> <b>Step 2</b>  
+                : Click on the Edit button to edit the job details.
+            </p>
+    
+            <img src="" alt="imag">
+    
+            <p> <b>Step 3</b>  
+                : Edit the existing download job with the information that you would like to change. Click on the Save 
+                button once you have done the editing.  
+            </p> 
+        </div>
+
+        <div class="span4">
+            <h5>
+                HOW DOES THE FAILED JOB RETRY MECHANISM WORKS? 
+            </h5>
+    
+            <p>
+                There are 2 types of Job retry in place for this application to run more effectively : <br>
+                <ol>
+                    <li>
+                        Job failed for the first time regardless of any exception, the system will attempt to trigger only 
+                        one time of job retry after 5 mins.
+                    </li>
+                    <li>
+                        Job failed for the first time and the failure is due to ‘Read timeout’, the system will trigger 3 
+                        times of job retries with first download waiting time is 20 seconds, 2nd time is 2 minutes and 3rd time is 5 minutes. 
+                    </li>
+                </ol>
+               
+            </p>
+        </div>
+
+        <div class="span5">
+            <h5>
+                WHAT IS THE FILE SIZE LIMITATION? 
+            </h5>
+    
+            <p>
+                Old version of Google Spreadsheets: 400,000 cells, with a maximum of 256 columns per sheet. Uploaded 
+                spreadsheet files that are converted to the Google spreadsheets format can’t be larger than 20 MB, and 
+                need to be under 400,000 cells and 256 columns per sheet. 
+            </p>
+            
+            <p>
+                New version of Google Sheets: 2 million cells, with a maximum of 256 columns per sheet. Uploaded 
+                spreadsheet files that are converted to the Google spreadsheets format can’t be larger than 100MB, and need 
+                to be under 2 million cells and 256 columns per sheet. 
+            </p>
+    
+            <p>
+                Please note that extremely large spreadsheets may have slower performance. 
+            </p>
+        </div>
+
+        <div class="span6">
+            <h5>
+                QUESTIONS/ FEEDBACK 
+            </h5>
+    
+            <p>
+                Should you have any questions/feedback on this application, please send email to : <br>
+                <ul>
+                    <li>
+                        pipeline.asia.support@seagate.com 
+                    </li>       
+                </ul>
+            </p>
+        </div>
+       
+    </div>
+  </body>
+</html>
